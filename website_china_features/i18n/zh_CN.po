@@ -1,0 +1,82 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_china_features
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-08 08:25+0000\n"
+"PO-Revision-Date: 2015-12-08 18:06+0800\n"
+"Last-Translator: renjie <i@renjie.me>\n"
+"Language-Team: Chinese (simplified)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: zh_CN\n"
+
+#. module: website_china_features
+#: model:ir.ui.view,arch_db:website_china_features.view_website_config_settings
+msgid "06fb34acf0b36e035e966786befa7645"
+msgstr ""
+
+#. module: website_china_features
+#: model:ir.model.fields,field_description:website_china_features.field_website_baidu_analytics_key
+#: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_baidu_analytics_key
+msgid "Baidu Analytics Key"
+msgstr "百度统计参数"
+
+#. module: website_china_features
+#: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_social_qq
+#: model:ir.model.fields,field_description:website_china_features.field_website_social_qq
+msgid "QQ Account"
+msgstr "QQ账号"
+
+#. module: website_china_features
+#: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_social_renren
+#: model:ir.model.fields,field_description:website_china_features.field_website_social_renren
+msgid "Renren Account"
+msgstr "人人账号"
+
+#. module: website_china_features
+#: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_social_wechat
+#: model:ir.model.fields,field_description:website_china_features.field_website_social_wechat
+msgid "WeChat Account"
+msgstr "微信账号"
+
+#. module: website_china_features
+#: model:ir.model,name:website_china_features.model_website
+msgid "Website"
+msgstr ""
+
+#. module: website_china_features
+#: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_social_weibo
+#: model:ir.model.fields,field_description:website_china_features.field_website_social_weibo
+msgid "Weibo Account"
+msgstr "微博账号"
+
+#. module: website_china_features
+#: model:ir.ui.view,arch_db:website_china_features.view_website_config_settings
+msgid "http://21775887.qzone.qq.com"
+msgstr ""
+
+#. module: website_china_features
+#: model:ir.ui.view,arch_db:website_china_features.view_website_config_settings
+msgid "http://weibo.com/renjiesu"
+msgstr ""
+
+#. module: website_china_features
+#: model:ir.ui.view,arch_db:website_china_features.view_website_config_settings
+msgid "http://www.renren.com/youraccount"
+msgstr ""
+
+#. module: website_china_features
+#: model:ir.ui.view,arch_db:website_china_features.view_website_config_settings
+msgid "javascript:alert('renjie_gz')"
+msgstr ""
+
+#. module: website_china_features
+#: model:ir.model,name:website_china_features.model_website_config_settings
+msgid "website.config.settings"
+msgstr ""
