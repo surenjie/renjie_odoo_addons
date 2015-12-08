@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+      <template id="layout" inherit_id="website.layout" name="Baidu Analytics Code">
+        <xpath expr="//body" position="inside">
+          <script t-if="website and website.baidu_analytics_key and not editable">
+              var _hmt = _hmt || [];
+              (function() {
+                var hm = document.createElement("script");
+                hm.src = "//hm.baidu.com/hm.js?<t t-esc="website.baidu_analytics_key"/>";
+                var s = document.getElementsByTagName("script")[0]; 
+                s.parentNode.insertBefore(hm, s);
+              })();
+          </script>
+        </xpath>
+      </template>
+      <template id="footer_default" inherit_id="website.footer_default" customize_show="False" name="Footer China Social">
+        <xpath expr="//div[@id='info']/h2" position="inside">
+            <a t-att-href="website.social_wechat" t-if="website.social_wechat" target="_blank"><i class="fa fa-wechat"/></a>
+            <a t-att-href="website.social_qq" t-if="website.social_qq" target="_blank"><i class="fa fa-qq"/></a>
+            <a t-att-href="website.social_weibo" t-if="website.social_weibo" target="_blank"><i class="fa fa-weibo"/></a>
+            <a t-att-href="website.social_renren" t-if="website.social_renren" target="_blank"><i class="fa fa-renren"/></a>
+        </xpath>
+      </template>
+    </data>
+</openerp>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="website.default_website" model="website">
+            <field name="baidu_analytics_key">06fb34acf0b36e035e966786befa7645</field>
+            <field name="social_wechat">javascript:alert('renjie_gz')</field>
+            <field name="social_qq">http://21775887.qzone.qq.com</field>
+            <field name="social_weibo">http://weibo.com/renjiesu</field>
+        </record>
+    </data>
+</openerp>

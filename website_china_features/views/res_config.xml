@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_website_config_settings" model="ir.ui.view">
+            <field name="name">Website China Features settings</field>
+            <field name="model">website.config.settings</field>
+            <field name="inherit_id" ref="website.view_website_config_settings"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='website_name']/.." position="inside">
+                    <label for="baidu_analytics_key"/>
+                    <div name="baidu_analytics_key">
+                        <div>
+                            <div name="baidu_analytics_key" class="oe_inline">
+                                <field name="baidu_analytics_key" placeholder="06fb34acf0b36e035e966786befa7645"/>
+                            </div>
+                        </div>
+                    </div>
+                </xpath>
+                <xpath expr="//div[@name='social_twitter']/.." position="inside">
+                    <label for="social_wechat"/>
+                    <div name="social_wechat">
+                        <div class="oe_inline">
+                            <field name="social_wechat" placeholder="javascript:alert('renjie_gz')"/>
+                        </div>
+                    </div>
+                    <label for="social_qq"/>
+                    <div name="social_qq">
+                        <div class="oe_inline">
+                            <field name="social_qq" placeholder="http://21775887.qzone.qq.com"/>
+                        </div>
+                    </div>
+                    <label for="social_weibo"/>
+                    <div name="social_weibo">
+                        <div class="oe_inline">
+                            <field name="social_weibo" placeholder="http://weibo.com/renjiesu"/>
+                        </div>
+                    </div>
+                    <label for="social_renren"/>
+                    <div name="social_renren">
+                        <div class="oe_inline">
+                            <field name="social_renren" placeholder="http://www.renren.com/youraccount"/>
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>
