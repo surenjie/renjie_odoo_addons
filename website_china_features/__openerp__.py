@@ -28,5 +28,10 @@
     'demo': [
         'data/demo.xml',
     ],
+    'images': [
+        'static/description/main_screenshot.png',
+    ],
     'installable': True,
+    'auto_install': False,
+    'application': False,
 }
