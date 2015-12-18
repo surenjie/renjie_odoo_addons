@@ -15,6 +15,13 @@
                             </div>
                         </div>
                     </div>
+                    <label for="id" string="Baidu Webmaster Push"/>
+                    <div>
+                        <div>
+                            <field name="baidu_webmaster_push" class="oe_inline"/>
+                            <label for="baidu_webmaster_push"/>
+                        </div>
+                    </div>
                 </xpath>
                 <xpath expr="//div[@name='social_twitter']/.." position="inside">
                     <label for="social_wechat"/>
