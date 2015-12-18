@@ -28,6 +28,17 @@ msgid "Baidu Analytics Key"
 msgstr "百度统计参数"
 
 #. module: website_china_features
+#: model:ir.model.fields,field_description:website_china_features.field_website_baidu_webmaster_push
+#: model:ir.ui.view,arch_db:website_china_features.view_website_config_settings
+msgid "Baidu Webmaster Push"
+msgstr "百度站长推送"
+
+#. module: website_china_features
+#: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_baidu_webmaster_push
+msgid "Push web link to Baidu webmaster platform"
+msgstr "推送网页链接到百度站长平台"
+
+#. module: website_china_features
 #: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_social_qq
 #: model:ir.model.fields,field_description:website_china_features.field_website_social_qq
 msgid "QQ Account"
