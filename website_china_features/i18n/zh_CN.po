@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 9.0c\n"
+"Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-08 08:25+0000\n"
-"PO-Revision-Date: 2015-12-08 18:06+0800\n"
+"POT-Creation-Date: 2015-12-08 11:21+0000\n"
+"PO-Revision-Date: 2015-12-08 19:46+0800\n"
 "Last-Translator: renjie <i@renjie.me>\n"
 "Language-Team: Chinese (simplified)\n"
 "MIME-Version: 1.0\n"
@@ -17,42 +17,39 @@ msgstr ""
 "Language: zh_CN\n"
 
 #. module: website_china_features
-#: model:ir.ui.view,arch_db:website_china_features.view_website_config_settings
+#: view:website.config.settings:website_china_features.view_website_config_settings
 msgid "06fb34acf0b36e035e966786befa7645"
 msgstr ""
 
 #. module: website_china_features
-#: model:ir.model.fields,field_description:website_china_features.field_website_baidu_analytics_key
-#: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_baidu_analytics_key
+#: field:website,baidu_analytics_key:0
+#: field:website.config.settings,baidu_analytics_key:0
 msgid "Baidu Analytics Key"
 msgstr "百度统计参数"
 
 #. module: website_china_features
-#: model:ir.model.fields,field_description:website_china_features.field_website_baidu_webmaster_push
-#: model:ir.ui.view,arch_db:website_china_features.view_website_config_settings
+#: field:website,baidu_webmaster_push:0
+#: view:website.config.settings:website_china_features.view_website_config_settings
 msgid "Baidu Webmaster Push"
 msgstr "百度站长推送"
 
 #. module: website_china_features
-#: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_baidu_webmaster_push
+#: field:website.config.settings,baidu_webmaster_push:0
 msgid "Push web link to Baidu webmaster platform"
 msgstr "推送网页链接到百度站长平台"
 
 #. module: website_china_features
-#: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_social_qq
-#: model:ir.model.fields,field_description:website_china_features.field_website_social_qq
+#: field:website,social_qq:0 field:website.config.settings,social_qq:0
 msgid "QQ Account"
 msgstr "QQ账号"
 
 #. module: website_china_features
-#: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_social_renren
-#: model:ir.model.fields,field_description:website_china_features.field_website_social_renren
+#: field:website,social_renren:0 field:website.config.settings,social_renren:0
 msgid "Renren Account"
 msgstr "人人账号"
 
 #. module: website_china_features
-#: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_social_wechat
-#: model:ir.model.fields,field_description:website_china_features.field_website_social_wechat
+#: field:website,social_wechat:0 field:website.config.settings,social_wechat:0
 msgid "WeChat Account"
 msgstr "微信账号"
 
@@ -62,32 +59,26 @@ msgid "Website"
 msgstr ""
 
 #. module: website_china_features
-#: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_social_weibo
-#: model:ir.model.fields,field_description:website_china_features.field_website_social_weibo
+#: field:website,social_weibo:0 field:website.config.settings,social_weibo:0
 msgid "Weibo Account"
 msgstr "微博账号"
 
 #. module: website_china_features
-#: model:ir.ui.view,arch_db:website_china_features.view_website_config_settings
+#: view:website.config.settings:website_china_features.view_website_config_settings
 msgid "http://21775887.qzone.qq.com"
 msgstr ""
 
 #. module: website_china_features
-#: model:ir.ui.view,arch_db:website_china_features.view_website_config_settings
+#: view:website.config.settings:website_china_features.view_website_config_settings
 msgid "http://weibo.com/renjiesu"
 msgstr ""
 
 #. module: website_china_features
-#: model:ir.ui.view,arch_db:website_china_features.view_website_config_settings
+#: view:website.config.settings:website_china_features.view_website_config_settings
 msgid "http://www.renren.com/youraccount"
 msgstr ""
 
 #. module: website_china_features
-#: model:ir.ui.view,arch_db:website_china_features.view_website_config_settings
+#: view:website.config.settings:website_china_features.view_website_config_settings
 msgid "javascript:alert('renjie_gz')"
-msgstr ""
-
-#. module: website_china_features
-#: model:ir.model,name:website_china_features.model_website_config_settings
-msgid "website.config.settings"
 msgstr ""
