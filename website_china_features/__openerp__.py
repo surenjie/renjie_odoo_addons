@@ -11,6 +11,7 @@
 主要相关特色集成
 ----------------
 * Baidu Analytics(百度统计——最大的中文网站分析平台)
+* Baidu Webmaster(百度站长平台_让网站更具价值)
 * Tencent WeChat(微信，是一个生活方式)
 * Tencent QQ(QQ空间-分享生活，留住感动)
 * Sina Weibo(微博-随时随地发现新鲜事)
@@ -19,7 +20,7 @@
     'author': "renjie",
     'website': "http://renjie.me",
     'category': 'Website',
-    'version': '0.1',
+    'version': '0.2',
     'depends': ['website'],
     'data': [
         'views/website_templates.xml',
