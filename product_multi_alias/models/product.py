@@ -28,6 +28,7 @@ class product_template(osv.osv):
 class product_multi_alias(osv.osv):
     _name = "product.multi.alias"
     _description = "Product Multi Alias"
+    _order = "product_tmpl_id,sequence,id"
 
     _columns = {
         'name': fields.char('Alias', required=True),
