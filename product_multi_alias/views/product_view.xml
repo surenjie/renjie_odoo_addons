@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="product_template_search_view" model="ir.ui.view">
+            <field name="name">product.template.alias.search</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_search_view"/>
+            <field name="arch" type="xml">
+                <field name="name" position="attributes">
+                    <attribute name="filter_domain">['|','|',('default_code','ilike',self),('name','ilike',self),('product_multi_alias_join','ilike',self)]</attribute>
+                </field>
+                <field name="name" position="after">
+                    <field name="product_multi_alias_join"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="product_template_tree_view" model="ir.ui.view">
+            <field name="name">product.template.alias.tree</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_tree_view"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="product_multi_alias_join"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="product_template_form_view" model="ir.ui.view">
+            <field name="name">product.template.alias.form</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page string="Alias">
+                        <field name="product_multi_alias_ids" widget="one2many_list">
+                            <tree editable="bottom">
+                                <field name="sequence" widget="handle"/>
+                                <field name="name"/>
+                            </tree>
+                        </field>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+
+        <record id="product_template_kanban_view" model="ir.ui.view">
+            <field name="name">product.template.alias.kanban</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_kanban_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//templates" position="before">
+                    <field name="product_multi_alias_join"/>
+                </xpath>
+                <xpath expr="//img" position="attributes">
+                    <attribute name="t-att-title">record.product_multi_alias_join.value</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="product_product_tree_view" model="ir.ui.view">
+            <field name="name">product.product.alias.tree</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_product_tree_view"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="product_multi_alias_join"/>
+                </field>
+            </field>
+        </record>
+
+    </data>
+</openerp>
