@@ -4,11 +4,11 @@
     'name': "Product Multi Alias",
     'summary': 'Add more than one alias for your product',
     'description': """
-Product Multi Alias
+简体中文支持
 ====================
-Add more than one alias for your product
+根据实际情况为您的产品添加多个别名，详情请参照截图
     """,
-    'author': "renjie",
+    'author': "renjie <i@renjie.me>",
     'website': "http://renjie.me",
     'category': 'Sales',
     'version': '0.1',

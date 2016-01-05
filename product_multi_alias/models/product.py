@@ -17,7 +17,7 @@ class product_template(osv.osv):
 
     _columns = {
         'product_multi_alias_ids': fields.one2many(
-            'product.multi.alias', 'product_tmpl_id', 'Product Multi Alias'
+            'product.multi.alias', 'product_tmpl_id', 'Product Alias'
         ),
         'product_multi_alias_join': fields.function(
             _get_product_multi_alias_join, store=True, type='char', string='Alias'
@@ -32,7 +32,7 @@ class product_multi_alias(osv.osv):
     _columns = {
         'name': fields.char('Alias', required=True),
         'sequence': fields.integer('Sequence'),
-        'product_tmpl_id': fields.many2one('product.template', 'Product Template', 
+        'product_tmpl_id': fields.many2one('product.template', 'Product', 
             required=True, ondelete="cascade"),
     }
 
