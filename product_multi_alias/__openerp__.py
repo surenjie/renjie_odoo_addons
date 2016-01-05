@@ -18,9 +18,7 @@
         'views/product_view.xml',
     ],
     'images': [
-        'static/description/main_screenshot.png',
-        'static/description/main_screenshot2.png',
-        'static/description/main_screenshot3.png',
+        'static/description/main_screenshot.png'
     ],
     'installable': True,
     'auto_install': False,
