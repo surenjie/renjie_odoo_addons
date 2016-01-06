@@ -22,6 +22,14 @@
                             <label for="baidu_webmaster_push"/>
                         </div>
                     </div>
+                    <label for="china_icp_beian_info"/>
+                    <div name="china_icp_beian_info">
+                        <div>
+                            <div name="china_icp_beian_info" class="oe_inline">
+                                <field name="china_icp_beian_info" placeholder="粤ICP备15107035号"/>
+                            </div>
+                        </div>
+                    </div>
                 </xpath>
                 <xpath expr="//div[@name='social_twitter']/.." position="inside">
                     <label for="social_wechat"/>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
-        <template id="layout" inherit_id="website.layout" name="Baidu Webmaster Code">
+        <template id="baidu_webmaster_code" inherit_id="website.layout" name="Baidu Webmaster Code">
             <xpath expr="//body" position="inside">
                 <script t-if="website and website.baidu_analytics_key and not editable">
                 var _hmt = _hmt || [];
-                (function() {
+                (function(){
                     var hm = document.createElement("script");
                     hm.src = "//hm.baidu.com/hm.js?<t t-esc="website.baidu_analytics_key"/>";
                     var s = document.getElementsByTagName("script")[0]; 
@@ -22,7 +22,16 @@
                 </script>
             </xpath>
         </template>
-        <template id="footer_default" inherit_id="website.footer_default" customize_show="False" name="Footer China Social">
+        <template id="china_icp_beian" inherit_id="website.layout" name="China ICP BeiAn">
+            <xpath expr="//body" position="inside">
+                <script t-if="website and website.china_icp_beian_info and not editable">
+                (function(){
+                    $("#footer").find(".pull-right").append("<t t-esc="website.china_icp_beian_info"/>");
+                })();
+                </script>
+            </xpath>
+        </template>
+        <template id="footer_china_social" inherit_id="website.footer_default" customize_show="False" name="Footer China Social">
             <xpath expr="//div[@id='info']/h2" position="inside">
                 <a t-att-href="website.social_wechat" t-if="website.social_wechat" target="_blank"><i class="fa fa-wechat"/></a>
                 <a t-att-href="website.social_qq" t-if="website.social_qq" target="_blank"><i class="fa fa-qq"/></a>
