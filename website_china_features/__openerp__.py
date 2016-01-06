@@ -20,7 +20,7 @@
     'author': "renjie <i@renjie.me>",
     'website': "http://renjie.me",
     'category': 'Website',
-    'version': '0.2',
+    'version': '0.3',
     'depends': ['website'],
     'data': [
         'views/website_templates.xml',
