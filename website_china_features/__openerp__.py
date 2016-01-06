@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-# License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
 {
+    'license': 'AGPL-3',
     'name': "Website China Features",
     'summary': 'Build Your China Features Website',
     'description': """
@@ -17,7 +17,7 @@
 * Sina Weibo(微博-随时随地发现新鲜事)
 * Chinese Renren(人人网，中国领先的实名制SNS社交网络)
     """,
-    'author': "renjie",
+    'author': "renjie <i@renjie.me>",
     'website': "http://renjie.me",
     'category': 'Website',
     'version': '0.2',
