@@ -25,6 +25,23 @@ class product_template(osv.osv):
     }
 
 
+class product_product(osv.osv):
+    _inherit = "product.product"
+
+    def search(self, cr, uid, args, offset=0, limit=None, order=None, context=None, count=False):
+        if not context:
+            context = {}
+        if context.get('search_product_multi_alias'):
+            if not args:
+                args = []
+            for index, arg in enumerate(args):
+                if arg[0] == "name":
+                    args.insert(index, ('product_multi_alias_join', arg[1], arg[2]))
+                    args.insert(index, '|')
+                    break
+        return super(product_product, self).search(cr, uid, args, offset=offset, limit=limit, order=order, context=context, count=count)
+
+
 class product_multi_alias(osv.osv):
     _name = "product.multi.alias"
     _description = "Product Multi Alias"
