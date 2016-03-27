@@ -39,5 +39,13 @@
                 <a t-att-href="website.social_renren" t-if="website.social_renren" target="_blank"><i class="fa fa-renren"/></a>
             </xpath>
         </template>
+        <template id="baidu_map_company_description" inherit_id="website.company_description" customize_show="False" name="Baidu Map Company Description">
+            <xpath expr="a[@t-att-href]" position="attributes">
+                <attribute name="t-att-href">res_company.baidu_map_link()</attribute>
+            </xpath>
+            <xpath expr="a/img[@t-att-src]" position="attributes">
+                <attribute name="t-att-src">res_company.baidu_map_img()</attribute>
+            </xpath>
+        </template>
     </data>
 </openerp>
