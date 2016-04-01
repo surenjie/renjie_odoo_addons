@@ -7,7 +7,7 @@
     'author': "renjie <i@renjie.me>",
     'website': "http://renjie.me",
     'category': 'Website',
-    'version': '0.3',
+    'version': '0.4',
     'depends': ['website'],
     'data': [
         'views/website_templates.xml',
@@ -21,5 +21,5 @@
     ],
     'installable': True,
     'auto_install': False,
-    'application': False,
+    'application': True,
 }

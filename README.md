@@ -4,6 +4,10 @@
 
     这是个长期维护的应用，因为中国不断的高速变化发展，未来特色完全不可预测，欢迎各种建议交流
 
+* [website_disabled](https://www.odoo.com/apps/modules/9.0/website_disabled/)(Disabled your website home '/' auto redirect to '/web')
+
+    不想使用被动依赖安装的网站功能
+
 * [bank_china_features](https://www.odoo.com/apps/modules/9.0/bank_china_features/)(Bank account information with China features)
 
     根据实际需要为您的银行账户添加有别于持有者的账户名称、分支行相关信息、是否对公账户属性
