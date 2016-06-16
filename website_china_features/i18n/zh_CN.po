@@ -6,14 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 9.0c\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-08 08:25+0000\n"
-"PO-Revision-Date: 2015-12-08 18:06+0800\n"
-"Last-Translator: renjie <i@renjie.me>\n"
-"Language-Team: Chinese (simplified)\n"
+"POT-Creation-Date: 2016-06-16 23:13+0800\n"
+"PO-Revision-Date: 2016-06-16 23:20+0800\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.7\n"
+"Last-Translator: renjie <i@renjie.me>\n"
 "Language: zh_CN\n"
 
 #. module: website_china_features
@@ -38,6 +39,21 @@ msgstr "百度站长推送"
 #: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_china_icp_beian_info
 msgid "China ICP BeiAn Info"
 msgstr "中国ICP备案信息"
+
+#. module: website_china_features
+#: model:ir.ui.view,arch_db:website_china_features.view_website_config_settings
+msgid "China ICP number"
+msgstr "粤ICP备15107035号"
+
+#. module: website_china_features
+#: model:ir.model,name:website_china_features.model_res_company
+msgid "Companies"
+msgstr "公司"
+
+#. module: website_china_features
+#: model:ir.model,name:website_china_features.model_res_partner
+msgid "Partner"
+msgstr "联系人"
 
 #. module: website_china_features
 #: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_baidu_webmaster_push
@@ -65,7 +81,7 @@ msgstr "微信账号"
 #. module: website_china_features
 #: model:ir.model,name:website_china_features.model_website
 msgid "Website"
-msgstr ""
+msgstr "网站"
 
 #. module: website_china_features
 #: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_social_weibo
@@ -96,4 +112,4 @@ msgstr ""
 #. module: website_china_features
 #: model:ir.model,name:website_china_features.model_website_config_settings
 msgid "website.config.settings"
-msgstr ""
+msgstr "网站设置"

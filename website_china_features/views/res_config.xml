@@ -26,7 +26,7 @@
                     <div name="china_icp_beian_info">
                         <div>
                             <div name="china_icp_beian_info" class="oe_inline">
-                                <field name="china_icp_beian_info" placeholder="粤ICP备15107035号"/>
+                                <field name="china_icp_beian_info" placeholder="China ICP number"/>
                             </div>
                         </div>
                     </div>
