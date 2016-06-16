@@ -26,7 +26,12 @@
             <xpath expr="//body" position="inside">
                 <script t-if="website and website.china_icp_beian_info and not editable">
                 (function(){
-                    $("#footer").find(".pull-right").append("<t t-esc="website.china_icp_beian_info"/>");
+                    var s = "http://www.miitbeian.gov.cn/";
+                    var a = $("<a/>").attr({
+                        "target" : "_blank",
+                        "href" : s
+                    }).text("<t t-esc="website.china_icp_beian_info"/>");
+                    $("#footer .pull-right").append(a);
                 })();
                 </script>
             </xpath>
