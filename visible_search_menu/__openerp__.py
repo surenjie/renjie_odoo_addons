@@ -8,7 +8,7 @@
     'website': "http://renjie.me",
     'category': 'Extra Tools',
     'version': '0.1',
-    'depends': ['base'],
+    'depends': ['web'],
     'data': [
         'views/webclient_templates.xml',
     ],
