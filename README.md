@@ -15,3 +15,7 @@
 * [product_multi_alias](https://www.odoo.com/apps/modules/9.0/product_multi_alias/)(Add more than one alias for your product)
 
     根据实际情况为您的产品添加多个别名，详情请参照截图
+
+* [visible_search_menu](https://www.odoo.com/apps/modules/9.0/visible_search_menu/)(Default visible advanced search menu)
+
+    默认显示高级搜索菜单（筛选、分组、收藏）
