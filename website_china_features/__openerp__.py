@@ -5,9 +5,9 @@
     'summary': '打造您的中国特色网站',
     'description': "Build Your China Features Website",
     'author': "renjie <i@renjie.me>",
-    'website': "http://renjie.me",
+    'website': "https://renjie.me",
     'category': 'Website',
-    'version': '0.5',
+    'version': '0.6',
     'depends': ['website'],
     'data': [
         'views/website_templates.xml',
