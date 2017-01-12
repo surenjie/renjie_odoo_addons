@@ -45,11 +45,10 @@
             </xpath>
         </template>
         <template id="baidu_map_company_description" inherit_id="website.company_description" customize_show="False" name="Baidu Map Company Description">
-            <xpath expr="a[@t-att-href]" position="attributes">
-                <attribute name="t-att-href">res_company.baidu_map_link()</attribute>
-            </xpath>
-            <xpath expr="a/img[@t-att-src]" position="attributes">
-                <attribute name="t-att-src">res_company.baidu_map_img()</attribute>
+            <xpath expr="t[last()]" position="replace">
+                <a t-att-href="res_company.baidu_map_link()" target="_blank">
+                   <img class="thumbnail img-responsive" t-att-src="res_company.baidu_map_img()" />
+                </a>
             </xpath>
         </template>
     </data>
