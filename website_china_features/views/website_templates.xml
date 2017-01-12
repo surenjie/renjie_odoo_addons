@@ -36,7 +36,7 @@
                 </script>
             </xpath>
         </template>
-        <template id="footer_china_social" inherit_id="website.footer_default" customize_show="False" name="Footer China Social">
+        <template id="footer_china_social" inherit_id="website.footer_default" name="Footer China Social">
             <xpath expr="//div[@id='info']/h2" position="inside">
                 <a t-att-href="website.social_wechat" t-if="website.social_wechat" target="_blank"><i class="fa fa-wechat"/></a>
                 <a t-att-href="website.social_qq" t-if="website.social_qq" target="_blank"><i class="fa fa-qq"/></a>
@@ -44,7 +44,7 @@
                 <a t-att-href="website.social_renren" t-if="website.social_renren" target="_blank"><i class="fa fa-renren"/></a>
             </xpath>
         </template>
-        <template id="baidu_map_company_description" inherit_id="website.company_description" customize_show="False" name="Baidu Map Company Description">
+        <template id="baidu_map_company_description" inherit_id="website.company_description" name="Baidu Map Company Description">
             <xpath expr="t[last()]" position="replace">
                 <a t-att-href="res_company.baidu_map_link()" target="_blank">
                    <img class="thumbnail img-responsive" t-att-src="res_company.baidu_map_img()" />
