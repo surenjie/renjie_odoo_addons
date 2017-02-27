@@ -17,8 +17,9 @@
 * Sina Weibo(微博-随时随地发现新鲜事)
 * Chinese Renren(人人网，中国领先的实名制SNS社交网络)
     """,
-    'author': "renjie",
-    'website': "http://renjie.me",
+    'author': "renjie <i@renjie.me>",
+    'website': "https://renjie.me",
+    'support': 'i@renjie.me',
     'category': 'Website',
     'version': '0.2',
     'depends': ['website'],
@@ -34,5 +35,5 @@
     ],
     'installable': True,
     'auto_install': False,
-    'application': False,
+    'application': True,
 }
