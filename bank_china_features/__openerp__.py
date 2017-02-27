@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 {
-    'license': 'AGPL-3',
+    'license': 'LGPL-3',
     'name': "Bank China Features",
     'summary': '中国特色银行账户信息',
     'description': "Bank account information with China features",
     'author': "renjie <i@renjie.me>",
-    'website': "http://renjie.me",
+    'website': "https://renjie.me",
+    'support': 'i@renjie.me',
     'category': 'Localization',
     'version': '0.1',
     'depends': ['base'],
@@ -18,5 +19,5 @@
     ],
     'installable': True,
     'auto_install': False,
-    'application': False,
+    'application': True,
 }

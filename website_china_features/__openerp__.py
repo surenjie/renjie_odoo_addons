@@ -6,6 +6,7 @@
     'description': "Build Your China Features Website",
     'author': "renjie <i@renjie.me>",
     'website': "https://renjie.me",
+    'support': 'i@renjie.me',
     'category': 'Website',
     'version': '0.6',
     'depends': ['website'],
