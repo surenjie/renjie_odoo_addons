@@ -2,36 +2,28 @@
 
 import logging
 
-from openerp.osv import fields, osv
+from odoo import api, fields, models, _
 
 _logger = logging.getLogger(__name__)
 
-class product_template(osv.osv):
+class product_template(models.Model):
     _inherit = "product.template"
 
-    def _get_product_multi_alias_join(self, cr, uid, ids, name, arg, context=None):
-        res = {}
-        for product in self.browse(cr, uid, ids, context=context):
-            res[product.id] = '\n'.join([alias.name for alias in product.product_multi_alias_ids])
-        return res
+    product_multi_alias_ids = fields.One2many('product.multi.alias', 'product_tmpl_id', string='Product Alias')
+    product_multi_alias_join = fields.Char(compute='_compute_product_multi_alias_join', store=True, string='Alias')
 
-    _columns = {
-        'product_multi_alias_ids': fields.one2many(
-            'product.multi.alias', 'product_tmpl_id', 'Product Alias'
-        ),
-        'product_multi_alias_join': fields.function(
-            _get_product_multi_alias_join, store=True, type='char', string='Alias'
-        ),
-    }
+    @api.one
+    @api.depends('product_multi_alias_ids.name')
+    def _compute_product_multi_alias_join(self):
+        self.product_multi_alias_join = '\n'.join([alias.name for alias in self.product_multi_alias_ids])
 
 
-class product_product(osv.osv):
+class product_product(models.Model):
     _inherit = "product.product"
 
-    def search(self, cr, uid, args, offset=0, limit=None, order=None, context=None, count=False):
-        if not context:
-            context = {}
-        if context.get('search_product_multi_alias'):
+    @api.model
+    def _search(self, args, offset=0, limit=None, order=None, count=False, access_rights_uid=None):
+        if self._context.get('search_product_multi_alias'):
             if not args:
                 args = []
             for index, arg in enumerate(args):
@@ -39,24 +31,17 @@ class product_product(osv.osv):
                     args.insert(index, ('product_multi_alias_join', arg[1], arg[2]))
                     args.insert(index, '|')
                     break
-        return super(product_product, self).search(cr, uid, args, offset=offset, limit=limit, order=order, context=context, count=count)
+        return super(product_product, self)._search(args, offset=offset, limit=limit, order=order, count=count, access_rights_uid=access_rights_uid)
 
 
-class product_multi_alias(osv.osv):
+class product_multi_alias(models.Model):
     _name = "product.multi.alias"
     _description = "Product Multi Alias"
     _order = "product_tmpl_id,sequence,id"
 
-    _columns = {
-        'name': fields.char('Alias', required=True),
-        'sequence': fields.integer('Sequence'),
-        'product_tmpl_id': fields.many2one('product.template', 'Product', 
-            required=True, ondelete="cascade"),
-    }
-
-    _defaults = {
-        'sequence': 1,
-    }
+    name = fields.Char('Alias', required=True)
+    sequence = fields.Integer('Sequence', default=1)
+    product_tmpl_id = fields.Many2one('product.template', 'Product', required=True, ondelete="cascade")
 
     _sql_constraints = [
         ('unique_name', 'unique(product_tmpl_id,name)', 'Alias of product must be unique'),

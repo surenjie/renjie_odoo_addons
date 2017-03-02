@@ -9,7 +9,7 @@
     'support': 'i@renjie.me',
     'category': 'Sales',
     'version': '0.2',
-    'depends': ['product'],
+    'depends': ['product', 'sales_team'],
     'data': [
         'security/ir.model.access.csv',
         'views/product_view.xml',

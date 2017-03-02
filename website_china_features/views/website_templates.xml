@@ -2,7 +2,7 @@
 <openerp>
     <data>
         <template id="baidu_webmaster_code" inherit_id="website.layout" name="Baidu Webmaster Code">
-            <xpath expr="//body" position="inside">
+            <xpath expr="//script[@id='tracking_code']" position="before">
                 <script t-if="website and website.baidu_analytics_key and not editable">
                 var _hmt = _hmt || [];
                 (function(){
@@ -28,7 +28,7 @@
             </xpath>
         </template>
         <template id="china_icp_beian" inherit_id="website.layout" name="China ICP BeiAn">
-            <xpath expr="//body" position="inside">
+            <xpath expr="//script[@id='tracking_code']" position="after">
                 <script t-if="website and website.china_icp_beian_info and not editable">
                 (function(){
                     var s = "http://www.miitbeian.gov.cn/";
@@ -36,7 +36,7 @@
                         "target" : "_blank",
                         "href" : s
                     }).text("<t t-esc="website.china_icp_beian_info"/>");
-                    $("#footer .pull-right").append(a);
+                    $("footer .pull-right").append(a);
                 })();
                 </script>
             </xpath>
