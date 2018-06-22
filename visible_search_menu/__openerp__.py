@@ -3,7 +3,6 @@
     'license': 'LGPL-3',
     'name': "Visible Search Menu",
     'summary': 'Default visible advanced search menu',
-    'description': 'Default visible advanced search menu(Filters | Group By | Favorites)',
     'author': "renjie <i@renjie.me>",
     'website': "https://renjie.me",
     'support': 'i@renjie.me',
@@ -12,6 +11,9 @@
     'depends': ['web'],
     'data': [
         'views/webclient_templates.xml',
+    ],
+    'images': [
+        'static/description/main_screenshot.png'
     ],
     'installable': True,
     'auto_install': False,
