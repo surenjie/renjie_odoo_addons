@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-# License AGPL-3 - See http://www.gnu.org/licenses/agpl-3.0.html
 {
+    'license': "AGPL-3",
     'name': "Website China Features",
     'summary': 'Build Your China Features Website',
     'author': "renjie <i@renjie.me>",
