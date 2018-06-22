@@ -12,6 +12,9 @@
     'data': [
         'views/webclient_templates.xml',
     ],
+    'images': [
+        'static/description/main_screenshot.png',
+    ],
     'installable': True,
     'auto_install': False,
     'application': False,
