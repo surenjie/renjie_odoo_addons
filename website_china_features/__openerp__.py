@@ -3,7 +3,6 @@
     'license': 'LGPL-3',
     'name': "Website China Features",
     'summary': '打造您的中国特色网站',
-    'description': "Build Your China Features Website",
     'author': "renjie <i@renjie.me>",
     'website': "https://renjie.me",
     'support': 'i@renjie.me',

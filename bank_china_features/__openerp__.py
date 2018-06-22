@@ -3,7 +3,6 @@
     'license': 'LGPL-3',
     'name': "Bank China Features",
     'summary': '中国特色银行账户信息',
-    'description': "Bank account information with China features",
     'author': "renjie <i@renjie.me>",
     'website': "https://renjie.me",
     'support': 'i@renjie.me',

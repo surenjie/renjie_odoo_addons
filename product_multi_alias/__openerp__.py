@@ -3,7 +3,6 @@
     'license': 'LGPL-3',
     'name': "Product Multi Alias",
     'summary': '为您的产品添加多个别名',
-    'description': "Add more than one alias for your product",
     'author': "renjie <i@renjie.me>",
     'website': "https://renjie.me",
     'support': 'i@renjie.me',
