@@ -3,7 +3,7 @@
 import logging
 import werkzeug
 
-from openerp import api, fields, models, _
+from odoo import api, fields, models, _
 
 _logger = logging.getLogger(__name__)
 
