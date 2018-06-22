@@ -1,79 +1,123 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* website_china_features
+#   * website_china_features
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 9.0c\n"
+"Project-Id-Version: Odoo Server 11.0-20180601\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-16 23:13+0800\n"
-"PO-Revision-Date: 2016-06-16 23:20+0800\n"
+"POT-Creation-Date: 2018-06-22 07:30+0000\n"
+"PO-Revision-Date: 2018-06-22 07:30+0000\n"
+"Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.8.7\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
 "Last-Translator: renjie <i@renjie.me>\n"
 "Language: zh_CN\n"
 
 #. module: website_china_features
-#: model:ir.ui.view,arch_db:website_china_features.view_website_config_settings
+#: model:ir.ui.view,arch_db:website_china_features.res_config_settings_view_form
 msgid "06fb34acf0b36e035e966786befa7645"
 msgstr ""
 
 #. module: website_china_features
+#: model:ir.ui.view,arch_db:website_china_features.res_config_settings_view_form
+msgid "And Social Media"
+msgstr "和 社交媒体"
+
+#. module: website_china_features
+#: model:ir.ui.view,arch_db:website_china_features.res_config_settings_view_form
+msgid "Baidu Analytics"
+msgstr "百度统计"
+
+#. module: website_china_features
+#: model:ir.model.fields,field_description:website_china_features.field_res_config_settings_baidu_analytics_key
 #: model:ir.model.fields,field_description:website_china_features.field_website_baidu_analytics_key
-#: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_baidu_analytics_key
 msgid "Baidu Analytics Key"
-msgstr "百度统计参数"
+msgstr "百度统计标识参数"
+
+#. module: website_china_features
+#: model:ir.ui.view,arch_db:website_china_features.res_config_settings_view_form
+msgid "Baidu Push"
+msgstr "百度推送"
 
 #. module: website_china_features
 #: model:ir.model.fields,field_description:website_china_features.field_website_baidu_webmaster_push
-#: model:ir.ui.view,arch_db:website_china_features.view_website_config_settings
 msgid "Baidu Webmaster Push"
 msgstr "百度站长推送"
 
 #. module: website_china_features
+#: model:ir.ui.view,arch_db:website_china_features.res_config_settings_view_form
+msgid "China Features"
+msgstr "中国特色"
+
+#. module: website_china_features
+#: model:ir.model.fields,field_description:website_china_features.field_res_config_settings_china_icp_beian_info
 #: model:ir.model.fields,field_description:website_china_features.field_website_china_icp_beian_info
-#: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_china_icp_beian_info
 msgid "China ICP BeiAn Info"
 msgstr "中国ICP备案信息"
 
 #. module: website_china_features
-#: model:ir.ui.view,arch_db:website_china_features.view_website_config_settings
+#: model:ir.ui.view,arch_db:website_china_features.res_config_settings_view_form
 msgid "China ICP number"
 msgstr "粤ICP备15107035号"
 
 #. module: website_china_features
 #: model:ir.model,name:website_china_features.model_res_company
 msgid "Companies"
-msgstr "公司"
+msgstr ""
 
 #. module: website_china_features
 #: model:ir.model,name:website_china_features.model_res_partner
-msgid "Partner"
-msgstr "联系人"
+msgid "Contact"
+msgstr ""
 
 #. module: website_china_features
-#: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_baidu_webmaster_push
+#: model:ir.ui.view,arch_db:website_china_features.res_config_settings_view_form
+msgid "ICP"
+msgstr ""
+
+#. module: website_china_features
+#: model:ir.ui.view,arch_db:website_china_features.res_config_settings_view_form
+msgid "Key"
+msgstr "标识"
+
+#. module: website_china_features
+#: model:ir.model.fields,field_description:website_china_features.field_res_config_settings_baidu_webmaster_push
 msgid "Push web link to Baidu webmaster platform"
 msgstr "推送网页链接到百度站长平台"
 
 #. module: website_china_features
-#: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_social_qq
+#: model:ir.ui.view,arch_db:website_china_features.res_config_settings_view_form
+msgid "QQ"
+msgstr ""
+
+#. module: website_china_features
+#: model:ir.model.fields,field_description:website_china_features.field_res_config_settings_social_qq
 #: model:ir.model.fields,field_description:website_china_features.field_website_social_qq
 msgid "QQ Account"
 msgstr "QQ账号"
 
 #. module: website_china_features
-#: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_social_renren
+#: model:ir.ui.view,arch_db:website_china_features.res_config_settings_view_form
+msgid "Renren"
+msgstr "人人"
+
+#. module: website_china_features
+#: model:ir.model.fields,field_description:website_china_features.field_res_config_settings_social_renren
 #: model:ir.model.fields,field_description:website_china_features.field_website_social_renren
 msgid "Renren Account"
 msgstr "人人账号"
 
 #. module: website_china_features
-#: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_social_wechat
+#: model:ir.ui.view,arch_db:website_china_features.res_config_settings_view_form
+msgid "WeChat"
+msgstr "微信"
+
+#. module: website_china_features
+#: model:ir.model.fields,field_description:website_china_features.field_res_config_settings_social_wechat
 #: model:ir.model.fields,field_description:website_china_features.field_website_social_wechat
 msgid "WeChat Account"
 msgstr "微信账号"
@@ -81,35 +125,40 @@ msgstr "微信账号"
 #. module: website_china_features
 #: model:ir.model,name:website_china_features.model_website
 msgid "Website"
-msgstr "网站"
+msgstr ""
 
 #. module: website_china_features
-#: model:ir.model.fields,field_description:website_china_features.field_website_config_settings_social_weibo
+#: model:ir.ui.view,arch_db:website_china_features.res_config_settings_view_form
+msgid "Weibo"
+msgstr "微博"
+
+#. module: website_china_features
+#: model:ir.model.fields,field_description:website_china_features.field_res_config_settings_social_weibo
 #: model:ir.model.fields,field_description:website_china_features.field_website_social_weibo
 msgid "Weibo Account"
 msgstr "微博账号"
 
 #. module: website_china_features
-#: model:ir.ui.view,arch_db:website_china_features.view_website_config_settings
+#: model:ir.ui.view,arch_db:website_china_features.res_config_settings_view_form
 msgid "http://21775887.qzone.qq.com"
 msgstr ""
 
 #. module: website_china_features
-#: model:ir.ui.view,arch_db:website_china_features.view_website_config_settings
+#: model:ir.ui.view,arch_db:website_china_features.res_config_settings_view_form
 msgid "http://weibo.com/renjiesu"
 msgstr ""
 
 #. module: website_china_features
-#: model:ir.ui.view,arch_db:website_china_features.view_website_config_settings
+#: model:ir.ui.view,arch_db:website_china_features.res_config_settings_view_form
 msgid "http://www.renren.com/youraccount"
 msgstr ""
 
 #. module: website_china_features
-#: model:ir.ui.view,arch_db:website_china_features.view_website_config_settings
+#: model:ir.ui.view,arch_db:website_china_features.res_config_settings_view_form
 msgid "javascript:alert('renjie_gz')"
 msgstr ""
 
 #. module: website_china_features
-#: model:ir.model,name:website_china_features.model_website_config_settings
-msgid "website.config.settings"
-msgstr "网站设置"
+#: model:ir.model,name:website_china_features.model_res_config_settings
+msgid "res.config.settings"
+msgstr ""

@@ -6,8 +6,8 @@ from odoo import api, fields, models, _
 
 _logger = logging.getLogger(__name__)
 
-class website_config_settings(models.TransientModel):
-    _inherit = 'website.config.settings'
+class ResConfigSettings(models.TransientModel):
+    _inherit = 'res.config.settings'
 
     china_icp_beian_info = fields.Char('China ICP BeiAn Info', related='website_id.china_icp_beian_info')
 

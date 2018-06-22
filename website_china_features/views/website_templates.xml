@@ -50,7 +50,8 @@
             </xpath>
         </template>
         <template id="baidu_map_company_description" inherit_id="website.company_description" name="Baidu Map Company Description">
-            <xpath expr="t[last()]" position="replace">
+            <xpath expr="//t[@t-if='not res_company.google_map_img()']" position="replace"></xpath>
+            <xpath expr="//t[@t-if='res_company.google_map_img()']" position="replace">
                 <a t-att-href="res_company.baidu_map_link()" target="_blank">
                    <img class="thumbnail img-responsive" t-att-src="res_company.baidu_map_img()" />
                 </a>
