@@ -7,45 +7,45 @@
             <field name="inherit_id" ref="website.res_config_settings_view_form"/>
             <field name="arch" type="xml">
                 <xpath expr="//div[@id='domain_setting']" position="before">
-                    <div class="col-xs-12 col-md-6 o_setting_box">
+                    <div class="col-12 col-lg-6 o_setting_box">
                         <div class="o_setting_right_pane">
-                            <label string="China Features"/>
+                            <span class="o_form_label">China Features</span>
                             <div class="text-muted">
                                 <label for="china_icp_beian_info" />And Social Media
                             </div>
                             <div class="content-group">
                                 <div class="row mt16">
-                                    <label class="col-md-3 o_light_label" string="ICP" for="china_icp_beian_info"/>
+                                    <label class="col-lg-3 o_light_label" string="ICP" for="china_icp_beian_info"/>
                                     <field name="china_icp_beian_info" placeholder="China ICP number"/>
                                 </div>
                                 <div class="row">
-                                    <label class="col-md-3 o_light_label" string="WeChat" for="social_wechat"/>
+                                    <label class="col-lg-3 o_light_label" string="WeChat" for="social_wechat"/>
                                     <field name="social_wechat" placeholder="javascript:alert('renjie_gz')"/>
                                 </div>
                                 <div class="row">
-                                    <label class="col-md-3 o_light_label" string="QQ" for="social_qq"/>
+                                    <label class="col-lg-3 o_light_label" string="QQ" for="social_qq"/>
                                     <field name="social_qq" placeholder="http://21775887.qzone.qq.com"/>
                                 </div>
                                 <div class="row">
-                                    <label class="col-md-3 o_light_label" string="Weibo" for="social_weibo"/>
+                                    <label class="col-lg-3 o_light_label" string="Weibo" for="social_weibo"/>
                                     <field name="social_weibo" placeholder="http://weibo.com/renjiesu"/>
                                 </div>
                                 <div class="row">
-                                    <label class="col-md-3 o_light_label" string="Renren" for="social_renren"/>
+                                    <label class="col-lg-3 o_light_label" string="Renren" for="social_renren"/>
                                     <field name="social_renren" placeholder="http://www.renren.com/youraccount"/>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-6 o_setting_box">
+                    <div class="col-12 col-lg-6 o_setting_box">
                         <div class="o_setting_right_pane">
-                            <label string="Baidu Analytics"/>
+                            <span class="o_form_label">Baidu Analytics</span>
                             <div class="text-muted">
                                 <label for="baidu_analytics_key" />
                             </div>
                             <div class="content-group">
                                 <div class="row mt16">
-                                    <label class="col-md-3 o_light_label" string="Key" for="baidu_analytics_key" />
+                                    <label class="col-lg-3 o_light_label" string="Key" for="baidu_analytics_key" />
                                     <field name="baidu_analytics_key" placeholder="06fb34acf0b36e035e966786befa7645"/>
                                 </div>
                             </div>

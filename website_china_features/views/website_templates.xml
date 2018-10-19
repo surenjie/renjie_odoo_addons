@@ -36,17 +36,17 @@
                         "target" : "_blank",
                         "href" : s
                     }).text("<t t-esc="website.china_icp_beian_info"/>");
-                    $("footer .pull-right").append(a);
+                    $("footer .o_brand_promotion").append(a);
                 })();
                 </script>
             </xpath>
         </template>
-        <template id="footer_china_social" inherit_id="website.footer_default" name="Footer China Social">
-            <xpath expr="//div[@id='info']/h2" position="inside">
-                <a t-att-href="website.social_wechat" t-if="website.social_wechat" target="_blank"><i class="fa fa-wechat"/></a>
-                <a t-att-href="website.social_qq" t-if="website.social_qq" target="_blank"><i class="fa fa-qq"/></a>
-                <a t-att-href="website.social_weibo" t-if="website.social_weibo" target="_blank"><i class="fa fa-weibo"/></a>
-                <a t-att-href="website.social_renren" t-if="website.social_renren" target="_blank"><i class="fa fa-renren"/></a>
+        <template id="footer_custom" inherit_id="website.footer_custom" name="Footer China Social">
+            <xpath expr="//div[@id='connect']/p" position="inside">
+                <a t-if="website.social_wechat" t-att-href="website.social_wechat" class="btn btn-sm btn-link"><i class="fa fa-2x fa-wechat"/></a>
+                <a t-if="website.social_qq" t-att-href="website.social_qq" class="btn btn-sm btn-link"><i class="fa fa-2x fa-qq"/></a>
+                <a t-if="website.social_weibo" t-att-href="website.social_weibo" class="btn btn-sm btn-link"><i class="fa fa-2x fa-weibo"/></a>
+                <a t-if="website.social_renren" t-att-href="website.social_renren" class="btn btn-sm btn-link"><i class="fa fa-2x fa-renren"/></a>
             </xpath>
         </template>
         <template id="baidu_map_company_description" inherit_id="website.company_description" name="Baidu Map Company Description">
