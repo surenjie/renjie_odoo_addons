@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 import logging
 
+from odoo.addons.website.controllers.main import Website
+
 from odoo import http
 from odoo.http import request
-from odoo.addons.website.controllers.main import Website
 
 logger = logging.getLogger(__name__)
 

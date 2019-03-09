@@ -2,9 +2,10 @@
 
 import json
 import logging
+
 from lxml import etree
 
-from odoo import api, fields, models, _
+from odoo import api, fields, models
 from odoo.osv import expression
 
 _logger = logging.getLogger(__name__)
