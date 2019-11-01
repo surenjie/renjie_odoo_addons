@@ -12,10 +12,10 @@ class product_template(models.Model):
     product_multi_alias_ids = fields.One2many('product.multi.alias', 'product_tmpl_id', string='Product Alias')
     product_multi_alias_join = fields.Char(compute='_compute_product_multi_alias_join', store=True, string='Alias')
 
-    @api.one
     @api.depends('product_multi_alias_ids.name')
     def _compute_product_multi_alias_join(self):
-        self.product_multi_alias_join = '\n'.join([alias.name for alias in self.product_multi_alias_ids])
+        for rec in self:
+            rec.product_multi_alias_join = '\n'.join([alias.name for alias in rec.product_multi_alias_ids])
 
 
 class product_product(models.Model):

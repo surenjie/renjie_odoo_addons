@@ -27,18 +27,11 @@
                 </script>
             </xpath>
         </template>
-        <template id="china_icp_beian" inherit_id="website.layout" name="China ICP BeiAn">
-            <xpath expr="//script[@id='tracking_code']" position="after">
-                <script t-if="website and website.china_icp_beian_info and not editable">
-                (function(){
-                    var s = "http://www.miitbeian.gov.cn/";
-                    var a = $("<a/>").attr({
-                        "target" : "_blank",
-                        "href" : s
-                    }).text("<t t-esc="website.china_icp_beian_info"/>");
-                    $("footer .o_brand_promotion").append(a);
-                })();
-                </script>
+        <template id="china_icp_beian" inherit_id="website.brand_promotion" name="China ICP BeiAn">
+            <xpath expr="//t[@t-set='_message']" position="inside">
+                <a t-if="website and website.china_icp_beian_info and not editable" href="http://www.miitbeian.gov.cn/" target="_blank">
+                    <t t-esc="website.china_icp_beian_info"/>
+                </a>
             </xpath>
         </template>
         <template id="footer_custom" inherit_id="website.footer_custom" name="Footer China Social">
