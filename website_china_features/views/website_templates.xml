@@ -29,7 +29,7 @@
         </template>
         <template id="china_icp_beian" inherit_id="website.brand_promotion" name="China ICP BeiAn">
             <xpath expr="//t[@t-set='_message']" position="inside">
-                <a t-if="website and website.china_icp_beian_info and not editable" href="http://www.miitbeian.gov.cn/" target="_blank">
+                <a t-if="website and website.china_icp_beian_info and not editable" href="https://beian.miit.gov.cn/" target="_blank">
                     <t t-esc="website.china_icp_beian_info"/>
                 </a>
             </xpath>
