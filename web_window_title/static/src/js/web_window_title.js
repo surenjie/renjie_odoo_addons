@@ -1,12 +1,12 @@
-odoo.define('web_window_title', function (require) {
-"use strict";
+/** @odoo-module alias=web.window.title **/
 
-var AbstractWebClient = require('web.AbstractWebClient');
-AbstractWebClient.include({
-    init: function() {
-        this._super.apply(this, arguments);
-        this.set('title_part', {"zopenerp": document.title});
+import { WebClient } from "@web/webclient/webclient";
+import {patch} from "@web/core/utils/patch";
+
+patch(WebClient.prototype, "Web Window Title", {
+    setup() {
+        const title = document.title;
+        this._super();
+        this.title.setParts({ zopenerp: title });
     }
-});
-
 });

@@ -13,12 +13,16 @@
         'data/demo.xml',
     ],
     'data': [
-        'views/webclient_templates.xml',
         'views/res_config.xml',
     ],
     'images': [
         'static/description/main_screenshot.png',
     ],
+    'assets': {
+        'web.assets_backend': [
+            'web_window_title/static/src/js/web_window_title.js',
+        ],
+    },
     'installable': True,
     'auto_install': False,
     'application': True,
