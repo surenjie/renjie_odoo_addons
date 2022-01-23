@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates id="template" xml:space="preserve">
-    <t t-extend="ImportView">
-        <t t-jquery=".oe_import_debug_options" t-operation="prepend">
+    <t t-extend="ImportView.side_panel">
+        <t t-jquery=".oe_import_debug_option" t-operation="append">
             <div>
-                <input type="checkbox" id="oe_import_ignore_error"/>
-                <label for="oe_import_ignore_error">
+                <input type="checkbox" id="oe_import_ignore_error" class="custom-control-input"/>
+                <label for="oe_import_ignore_error" class="custom-control-label">
                     Import data ignore error
                 </label>
             </div>
