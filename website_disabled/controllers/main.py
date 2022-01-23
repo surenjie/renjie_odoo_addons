@@ -8,6 +8,6 @@ from odoo.addons.website.controllers.main import Website
 logger = logging.getLogger(__name__)
 
 class WebsiteDisabled(Website):
-    @http.route(auth="none", website=False)
+    @http.route(auth="none", website=False, sitemap=False)
     def index(self, **kw):
-        return http.local_redirect('/web', query=request.params, keep_hash=True)
+        return request.redirect_query('/web', query=request.params)

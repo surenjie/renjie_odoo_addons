@@ -2,7 +2,7 @@
 <odoo>
     <data>
         <template id="baidu_webmaster_code" inherit_id="website.layout" name="Baidu Webmaster Code">
-            <xpath expr="//script[@id='tracking_code']" position="before">
+            <xpath expr="//div[@id='wrapwrap']" position="after">
                 <script t-if="website and website.baidu_analytics_key and not editable">
                 var _hmt = _hmt || [];
                 (function(){
@@ -49,17 +49,6 @@
                 <a t-if="website.social_weibo" t-att-href="website.social_weibo" target="_blank"><i class="fa rounded-circle shadow-sm fa-weibo"/></a>
                 <a t-if="website.social_renren" t-att-href="website.social_renren" target="_blank"><i class="fa rounded-circle shadow-sm fa-renren"/></a>
             </xpath>
-        </template>
-        <template id="baidu_map_company_description" inherit_id="website.company_description" name="Baidu Map Company Description">
-            <xpath expr="//t[@t-if='not res_company.google_map_img()']" position="replace" />
-        </template>
-        <template id="baidu_map_company_description_ext" inherit_id="website.company_description_google_map" name="Baidu Map Company Description Ext">
-            <xpath expr="//t[@t-if='res_company.google_map_img()']" position="replace">
-                <a t-att-href="res_company.baidu_map_link()" target="_blank">
-                   <img class="img-fluid" t-att-src="res_company.baidu_map_img()" alt="Baidu Maps" />
-                </a>
-            </xpath>
-            <xpath expr="//t[@t-elif='editable']" position="replace" />
         </template>
     </data>
 </odoo>
