@@ -36,18 +36,18 @@
         </template>
         <template id="template_header_contact_oe_structure_header_contact_1" inherit_id="website.template_header_contact_oe_structure_header_contact_1" name="Header Contact China Social">
             <xpath expr="//div[@data-name='Social Media']" position="inside">
-                <a t-if="website.social_wechat" t-att-href="website.social_wechat" target="_blank"><i class="fa m-1 fa-wechat"/></a>
-                <a t-if="website.social_qq" t-att-href="website.social_qq" target="_blank"><i class="fa m-1 fa-qq"/></a>
-                <a t-if="website.social_weibo" t-att-href="website.social_weibo" target="_blank"><i class="fa m-1 fa-weibo"/></a>
-                <a t-if="website.social_renren" t-att-href="website.social_renren" target="_blank"><i class="fa m-1 fa-renren"/></a>
+                <a t-if="website.social_wechat" t-att-href="website.social_wechat" target="_blank" class="text-800"><i class="fa m-1 fa-wechat"/></a>
+                <a t-if="website.social_qq" t-att-href="website.social_qq" target="_blank" class="text-800"><i class="fa m-1 fa-qq"/></a>
+                <a t-if="website.social_weibo" t-att-href="website.social_weibo" target="_blank" class="text-800"><i class="fa m-1 fa-weibo"/></a>
+                <a t-if="website.social_renren" t-att-href="website.social_renren" target="_blank" class="text-800"><i class="fa m-1 fa-renren"/></a>
             </xpath>
         </template>
         <template id="footer_custom" inherit_id="website.footer_custom" name="Footer China Social">
             <xpath expr="//div[@data-name='Social Media']/a[@href='/']" position="before">
-                <a t-if="website.social_wechat" t-att-href="website.social_wechat" target="_blank"><i class="fa rounded-circle shadow-sm fa-wechat"/></a>
-                <a t-if="website.social_qq" t-att-href="website.social_qq" target="_blank"><i class="fa rounded-circle shadow-sm fa-qq"/></a>
-                <a t-if="website.social_weibo" t-att-href="website.social_weibo" target="_blank"><i class="fa rounded-circle shadow-sm fa-weibo"/></a>
-                <a t-if="website.social_renren" t-att-href="website.social_renren" target="_blank"><i class="fa rounded-circle shadow-sm fa-renren"/></a>
+                <a t-if="website.social_wechat" t-att-href="website.social_wechat" target="_blank" class="text-800"><i class="fa rounded-circle shadow-sm fa-wechat"/></a>
+                <a t-if="website.social_qq" t-att-href="website.social_qq" target="_blank" class="text-800"><i class="fa rounded-circle shadow-sm fa-qq"/></a>
+                <a t-if="website.social_weibo" t-att-href="website.social_weibo" target="_blank" class="text-800"><i class="fa rounded-circle shadow-sm fa-weibo"/></a>
+                <a t-if="website.social_renren" t-att-href="website.social_renren" target="_blank" class="text-800"><i class="fa rounded-circle shadow-sm fa-renren"/></a>
             </xpath>
         </template>
     </data>

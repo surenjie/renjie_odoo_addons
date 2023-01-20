@@ -4,59 +4,56 @@
         <record id="res_config_settings_view_form" model="ir.ui.view">
             <field name="name">res.config.settings.view.form.inherit.website</field>
             <field name="model">res.config.settings</field>
+            <field name="priority">99</field>
             <field name="inherit_id" ref="website.res_config_settings_view_form"/>
             <field name="arch" type="xml">
-                <xpath expr="//div[@id='domain_setting']" position="before">
-                    <div class="col-12 col-lg-6 o_setting_box">
-                        <div class="o_setting_right_pane">
-                            <span class="o_form_label">China Features</span>
-                            <div class="text-muted">
-                                <label for="china_icp_beian_info" />And Social Media
+                <xpath expr="//div[@id='website_info_settings']" position="after">
+                    <h2>China Features</h2>
+                    <div class="col-xs-12 row o_settings_container" id="website_china_features">
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_left_pane"/>
+                            <div class="o_setting_right_pane border-start-0">
+                                <div class="content-group">
+                                    <div class="row mt8">
+                                        <label class="col-lg-3" string="ICP BeiAn" for="china_icp_beian_info"/>
+                                        <field name="china_icp_beian_info" placeholder="China ICP number"/>
+                                    </div>
+                                    <div class="row mt8">
+                                        <label class="col-lg-3" string="Baidu Key" for="baidu_analytics_key"/>
+                                        <field name="baidu_analytics_key" placeholder="Baidu Analytics Key"/>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="content-group">
-                                <div class="row mt16">
-                                    <label class="col-lg-3 o_light_label" string="ICP" for="china_icp_beian_info"/>
-                                    <field name="china_icp_beian_info" placeholder="China ICP number"/>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3 o_light_label" string="WeChat" for="social_wechat"/>
-                                    <field name="social_wechat" placeholder="javascript:alert('renjie_gz')"/>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3 o_light_label" string="QQ" for="social_qq"/>
-                                    <field name="social_qq" placeholder="http://21775887.qzone.qq.com"/>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3 o_light_label" string="Weibo" for="social_weibo"/>
-                                    <field name="social_weibo" placeholder="http://weibo.com/renjiesu"/>
-                                </div>
-                                <div class="row">
-                                    <label class="col-lg-3 o_light_label" string="Renren" for="social_renren"/>
-                                    <field name="social_renren" placeholder="http://www.renren.com/youraccount"/>
+                            <div class="o_setting_left_pane">
+                                <field name="baidu_webmaster_push" />
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label string="Baidu Push" for="baidu_webmaster_push"/>
+                                <div class="text-muted">
+                                    <label for="baidu_webmaster_push"/>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-6 o_setting_box">
-                        <div class="o_setting_right_pane">
-                            <span class="o_form_label">Baidu Analytics</span>
-                            <div class="text-muted">
-                                <label for="baidu_analytics_key" />
-                            </div>
-                            <div class="content-group">
-                                <div class="row mt16">
-                                    <label class="col-lg-3 o_light_label" string="Key" for="baidu_analytics_key" />
-                                    <field name="baidu_analytics_key" placeholder="06fb34acf0b36e035e966786befa7645"/>
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_right_pane border-start-0">
+                                <div class="content-group">
+                                    <div class="row mt8">
+                                        <label class="col-lg-3" string="WeChat" for="social_wechat"/>
+                                        <field name="social_wechat" placeholder="javascript:alert('renjie_gz')"/>
+                                    </div>
+                                    <div class="row mt8">
+                                        <label class="col-lg-3" string="QQ" for="social_qq"/>
+                                        <field name="social_qq" placeholder="http://21775887.qzone.qq.com"/>
+                                    </div>
+                                    <div class="row mt8">
+                                        <label class="col-lg-3" string="Weibo" for="social_weibo"/>
+                                        <field name="social_weibo" placeholder="http://weibo.com/renjiesu"/>
+                                    </div>
+                                    <div class="row mt8">
+                                        <label class="col-lg-3" string="Renren" for="social_renren"/>
+                                        <field name="social_renren" placeholder="http://www.renren.com/youraccount"/>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="o_setting_left_pane">
-                            <field name="baidu_webmaster_push" />
-                        </div>
-                        <div class="o_setting_right_pane">
-                            <label string="Baidu Push" for="baidu_webmaster_push"/>
-                            <div class="text-muted">
-                                <label for="baidu_webmaster_push"/>
                             </div>
                         </div>
                     </div>
