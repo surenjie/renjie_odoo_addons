@@ -13,11 +13,9 @@
         'static/description/main_screenshot.png',
     ],
     'assets': {
-        'web.assets_qweb': [
-            'import_ignore_error/static/src/xml/import.xml',
-        ],
         'web.assets_backend': [
             'import_ignore_error/static/src/js/import_ignore_error.js',
+            'import_ignore_error/static/src/xml/import.xml',
         ],
     },
     'installable': True,

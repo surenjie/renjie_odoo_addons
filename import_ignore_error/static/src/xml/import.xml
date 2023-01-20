@@ -3,10 +3,8 @@
     <t t-extend="ImportView.side_panel">
         <t t-jquery=".oe_import_debug_option" t-operation="append">
             <div>
-                <input type="checkbox" id="oe_import_ignore_error" class="custom-control-input"/>
-                <label for="oe_import_ignore_error" class="custom-control-label">
-                    Import data ignore error
-                </label>
+                <input type="checkbox" id="oe_import_ignore_error" class="form-check-input"/>
+                <label for="oe_import_ignore_error" class="form-check-label">Import data ignore error</label>
             </div>
         </t>
     </t>
