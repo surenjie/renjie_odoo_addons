@@ -34,20 +34,68 @@
                 </a>
             </xpath>
         </template>
-        <template id="template_header_contact_oe_structure_header_contact_1" inherit_id="website.template_header_contact_oe_structure_header_contact_1" name="Header Contact China Social">
+        <template id="footer_custom" inherit_id="website.footer_custom" name="Footer China Social">
             <xpath expr="//div[@data-name='Social Media']" position="inside">
-                <a t-if="website.social_wechat" t-att-href="website.social_wechat" target="_blank" class="text-800"><i class="fa m-1 fa-wechat"/></a>
-                <a t-if="website.social_qq" t-att-href="website.social_qq" target="_blank" class="text-800"><i class="fa m-1 fa-qq"/></a>
-                <a t-if="website.social_weibo" t-att-href="website.social_weibo" target="_blank" class="text-800"><i class="fa m-1 fa-weibo"/></a>
-                <a t-if="website.social_renren" t-att-href="website.social_renren" target="_blank" class="text-800"><i class="fa m-1 fa-renren"/></a>
+                <a t-if="website.social_wechat" t-att-href="website.social_wechat" class="s_social_media" target="_blank">
+                    <i class="fa fa-wechat rounded-circle shadow-sm o_editable_media"/>
+                </a>
+                <a t-if="website.social_qq" t-att-href="website.social_qq" class="s_social_media" target="_blank">
+                    <i class="fa fa-qq rounded-circle shadow-sm o_editable_media"/>
+                </a>
+                <a t-if="website.social_weibo" t-att-href="website.social_weibo" class="s_social_media" target="_blank">
+                    <i class="fa fa-weibo rounded-circle shadow-sm o_editable_media"/>
+                </a>
+                <a t-if="website.social_renren" t-att-href="website.social_renren" class="s_social_media" target="_blank">
+                    <i class="fa fa-renren rounded-circle shadow-sm o_editable_media"/>
+                </a>
             </xpath>
         </template>
-        <template id="footer_custom" inherit_id="website.footer_custom" name="Footer China Social">
-            <xpath expr="//div[@data-name='Social Media']/a[@href='/']" position="before">
-                <a t-if="website.social_wechat" t-att-href="website.social_wechat" target="_blank" class="text-800"><i class="fa rounded-circle shadow-sm fa-wechat"/></a>
-                <a t-if="website.social_qq" t-att-href="website.social_qq" target="_blank" class="text-800"><i class="fa rounded-circle shadow-sm fa-qq"/></a>
-                <a t-if="website.social_weibo" t-att-href="website.social_weibo" target="_blank" class="text-800"><i class="fa rounded-circle shadow-sm fa-weibo"/></a>
-                <a t-if="website.social_renren" t-att-href="website.social_renren" target="_blank" class="text-800"><i class="fa rounded-circle shadow-sm fa-renren"/></a>
+        <template id="template_footer_centered" inherit_id="website.template_footer_centered" name="Centered China Social">
+            <xpath expr="//div[@data-name='Social Media']" position="inside">
+                <a t-if="website.social_wechat" t-att-href="website.social_wechat" class="s_social_media" target="_blank">
+                    <i class="fa fa-wechat rounded-circle rounded shadow-sm o_editable_media"/>
+                </a>
+                <a t-if="website.social_qq" t-att-href="website.social_qq" class="s_social_media" target="_blank">
+                    <i class="fa fa-qq rounded-circle rounded shadow-sm o_editable_media"/>
+                </a>
+                <a t-if="website.social_weibo" t-att-href="website.social_weibo" class="s_social_media" target="_blank">
+                    <i class="fa fa-weibo rounded-circle rounded shadow-sm o_editable_media"/>
+                </a>
+                <a t-if="website.social_renren" t-att-href="website.social_renren" class="s_social_media" target="_blank">
+                    <i class="fa fa-renren rounded-circle rounded shadow-sm o_editable_media"/>
+                </a>
+            </xpath>
+        </template>
+        <template id="template_footer_headline" inherit_id="website.template_footer_headline" name="Headline China Social">
+            <xpath expr="//div[@data-name='Social Media']" position="inside">
+                <a t-if="website.social_wechat" t-att-href="website.social_wechat" class="s_social_media" target="_blank">
+                    <i class="fa fa-1x fa-wechat rounded-circle shadow-sm o_editable_media"/>
+                </a>
+                <a t-if="website.social_qq" t-att-href="website.social_qq" class="s_social_media" target="_blank">
+                    <i class="fa fa-1x fa-qq rounded-circle shadow-sm o_editable_media"/>
+                </a>
+                <a t-if="website.social_weibo" t-att-href="website.social_weibo" class="s_social_media" target="_blank">
+                    <i class="fa fa-1x fa-weibo rounded-circle shadow-sm o_editable_media"/>
+                </a>
+                <a t-if="website.social_renren" t-att-href="website.social_renren" class="s_social_media" target="_blank">
+                    <i class="fa fa-1x fa-renren rounded-circle shadow-sm o_editable_media"/>
+                </a>
+            </xpath>
+        </template>
+        <template id="header_social_links" inherit_id="website.header_social_links" name="Header Social Links China Social">
+            <xpath expr="//div[@data-name='Social Media']" position="inside">
+                <a t-if="website.social_wechat" t-att-href="website.social_wechat" class="s_social_media o_nav-link_secondary nav-link m-0 p-0 text-decoration-none" target="_blank">
+                    <i class="fa fa-wechat fa-stack p-1 o_editable_media"/>
+                </a>
+                <a t-if="website.social_qq" t-att-href="website.social_qq" class="s_social_media o_nav-link_secondary nav-link m-0 p-0 text-decoration-none" target="_blank">
+                    <i class="fa fa-qq fa-stack p-1 o_editable_media"/>
+                </a>
+                <a t-if="website.social_weibo" t-att-href="website.social_weibo" class="s_social_media o_nav-link_secondary nav-link m-0 p-0 text-decoration-none" target="_blank">
+                    <i class="fa fa-weibo fa-stack p-1 o_editable_media"/>
+                </a>
+                <a t-if="website.social_renren" t-att-href="website.social_renren" class="s_social_media o_nav-link_secondary nav-link m-0 p-0 text-decoration-none" target="_blank">
+                    <i class="fa fa-renren fa-stack p-1 o_editable_media"/>
+                </a>
             </xpath>
         </template>
     </data>

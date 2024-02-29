@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates id="template" xml:space="preserve">
-    <t t-extend="ImportView.side_panel">
-        <t t-jquery=".oe_import_debug_option" t-operation="append">
-            <div>
-                <input type="checkbox" id="oe_import_ignore_error" class="form-check-input"/>
-                <label for="oe_import_ignore_error" class="form-check-label">Import data ignore error</label>
-            </div>
-        </t>
+    <t t-inherit="base_import.ImportDataSidepanel" t-inherit-mode="extension">
+        <xpath expr="//*[hasclass('o_import_debug_options')]" position="inside">
+            <CheckBox value="props.options.ignore_error" onChange.bind="(isChecked) => this.props.onOptionChanged('ignore_error', isChecked)">
+                Import data ignore error
+            </CheckBox>
+        </xpath>
     </t>
 </templates>

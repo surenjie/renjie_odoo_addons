@@ -1,19 +1,21 @@
-odoo.define('import_ignore_error', function (require) {
-"use strict";
+/** @odoo-module alias=import.ignore.error **/
 
-var core = require('web.core');
-var DataImport = require('base_import.import').DataImport;
-DataImport.include({
-    call_import: function(kwargs) {
-        var self = this;
-        var ignore_error = 'ignore_error' in kwargs ? kwargs.ignore_error : this.$('#oe_import_ignore_error').prop('checked');
-        delete kwargs.ignore_error;
-        self.parent_context = _.extend(
-            self.parent_context || {},
-            {import_ignore_error: ignore_error}
-        );
-        return self._super.call(self, kwargs);
+import { BaseImportModel } from "@base_import/import_model";
+import { patch } from "@web/core/utils/patch";
+
+patch(BaseImportModel.prototype, {
+    init() {
+        Object.assign(this.importOptionsValues, {
+            ignore_error: {
+                value: false
+            }
+        });
+        super.init();
+    },
+    _callImport(dryrun, args) {
+        Object.assign(this.context, {
+            import_ignore_error: this.importOptions.ignore_error
+        })
+        return super._callImport(dryrun, args);
     }
-});
-
 });
