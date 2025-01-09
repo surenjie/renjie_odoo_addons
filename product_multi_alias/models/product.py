@@ -22,7 +22,7 @@ class product_product(models.Model):
     _inherit = "product.product"
 
     @api.model
-    def _search(self, domain, offset=0, limit=None, order=None, access_rights_uid=None):
+    def _search(self, domain, offset=0, limit=None, order=None):
         if self._context.get('search_product_multi_alias'):
             if not args:
                 args = []
@@ -31,7 +31,7 @@ class product_product(models.Model):
                     args.insert(index, ('product_multi_alias_join', arg[1], arg[2]))
                     args.insert(index, '|')
                     break
-        return super(product_product, self)._search(domain, offset=offset, limit=limit, order=order, access_rights_uid=access_rights_uid)
+        return super(product_product, self)._search(domain, offset=offset, limit=limit, order=order)
 
 
 class product_multi_alias(models.Model):

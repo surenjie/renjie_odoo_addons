@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates id="template" xml:space="preserve">
-    <t t-inherit="base_import.ImportDataSidepanel" t-inherit-mode="extension">
+    <t t-inherit="ImportDataSidepanel" t-inherit-mode="extension">
         <xpath expr="//*[hasclass('o_import_debug_options')]" position="inside">
             <CheckBox value="props.options.ignore_error" onChange.bind="(isChecked) => this.props.onOptionChanged('ignore_error', isChecked)">
                 Import data ignore error

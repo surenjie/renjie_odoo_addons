@@ -35,27 +35,13 @@
                 <notebook position="inside">
                     <page string="Alias">
                         <field name="product_multi_alias_ids" widget="one2many_list">
-                            <tree editable="bottom">
+                            <list editable="bottom">
                                 <field name="sequence" widget="handle"/>
                                 <field name="name"/>
-                            </tree>
+                            </list>
                         </field>
                     </page>
                 </notebook>
-            </field>
-        </record>
-
-        <record id="product_template_kanban_view" model="ir.ui.view">
-            <field name="name">product.template.alias.kanban</field>
-            <field name="model">product.template</field>
-            <field name="inherit_id" ref="product.product_template_kanban_view"/>
-            <field name="arch" type="xml">
-                <xpath expr="//templates" position="before">
-                    <field name="product_multi_alias_join"/>
-                </xpath>
-                <xpath expr="//img" position="attributes">
-                    <attribute name="t-att-title">record.product_multi_alias_join.value</attribute>
-                </xpath>
             </field>
         </record>
 
