@@ -22,7 +22,16 @@ class product_product(models.Model):
     _inherit = "product.product"
 
     @api.model
-    def _search(self, domain, offset=0, limit=None, order=None):
+    def _search(
+        self,
+        domain,
+        offset: int = 0,
+        limit: int | None = None,
+        order: str | None = None,
+        *,
+        active_test: bool = True,
+        bypass_access: bool = False,
+    ):
         if self._context.get('search_product_multi_alias'):
             if not args:
                 args = []
