@@ -32,7 +32,7 @@ class product_product(models.Model):
         active_test: bool = True,
         bypass_access: bool = False,
     ):
-        if self._context.get('search_product_multi_alias'):
+        if self.env.context.get('search_product_multi_alias'):
             if not args:
                 args = []
             for index, arg in enumerate(args):
